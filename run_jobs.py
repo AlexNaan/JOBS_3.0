@@ -1,5 +1,5 @@
 import sys
-from jobs import start_settings, settings_connect, info_doc
+from jobs import start_settings, settings_connect, info_doc, image_stage, doc_pdf
 import time
 
 defaul_settings = settings_connect.Config()
@@ -13,7 +13,7 @@ start_settings.insert_default_settings()
 
 
 new_Doc 	= info_doc.Doc_and_stage(defaul_settings)
-new_Image 	= image_stage().Load_update_image(defaul_settings)
+new_Image 	= image_stage.Load_update_image(defaul_settings)
 new_Pdf		= doc_pdf.Load_update_pdf(defaul_settings)
 
 
